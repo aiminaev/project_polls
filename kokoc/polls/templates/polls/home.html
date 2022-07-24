@@ -1,0 +1,26 @@
+{% extends "polls/base.html" %}
+{% block content %}
+  <div class="row justify-content-center py-5" >
+    <div class="col-md-8 p-5">
+      <div class="card">
+        <div class="card-header">
+         <b> Правила:</b><br>
+          Отвечайте на вопросы
+          <p>
+            <div class="row justify-content-center">
+              <div class="col-md-12 p-5">
+                <div class="card">
+                 +1 очко
+                  <div class="card-header">
+                    <i>Язык программирования Python получил свое название от британской комедийной группы «Монти Пайтон».</i>
+                  </div>
+                  <a class="btn btn-primary btn-sm" href="{%url 'polls:test'%}" role="button">Да или Нет</a>
+                </div>
+              </div>
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
